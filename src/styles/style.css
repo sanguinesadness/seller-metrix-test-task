@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background: #FFF;
+}
+
+.datepicker__day-header,
+.datepicker__day-cell {
+  height: 40px;
+  width: 40px;
+}
+
+.datepicker__day-cell.between {
+  background: #f7ad17;
+  color: white;
+}
+
+.selection-button {
+  text-transform: none !important;
+  color: black !important;
+  width: 100%;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  padding: 10px 15px !important;
+}
+
+.Mui-disabled {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */

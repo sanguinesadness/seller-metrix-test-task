@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$dark-orange: #f7ad17;
+$light-orange: #ef7401;
+$orange-gradient: linear-gradient(135deg, $light-orange, $dark-orange);
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    background: #FFF;
+}
+
+.datepicker__day-header,
+.datepicker__day-cell {
+    height: 40px;
+    width: 40px;
+}
+
+.datepicker__day-cell {
+    &.between {
+        background: $dark-orange;
+        color: white;
+    }
+}
+
+.selection-button {
+    text-transform: none !important;
+    color: black !important;
+    width: 100%;
+    justify-content: flex-start !important;
+    padding: 10px 15px !important;
+}
+
+.Mui-disabled {
+    opacity: 0.5;
+}
